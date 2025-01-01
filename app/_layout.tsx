@@ -1,39 +1,45 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
+import * as Font from 'expo-font';
 import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { ScrollView } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { AppProvider } from '@/components/AppContext/AppContext';
 
-import { useColorScheme } from '@/hooks/useColorScheme';
+const _layout = () => {
 
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
+  const [fontsLoaded, setFontsLoaded] = useState(true);
 
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+  const loadFonts = async () => {
+    await Font.loadAsync({
+      "RobotoSlab": require('../assets/fonts/CrimsonText-Regular.ttf'),
+      "RobotoSlabBold": require('../assets/fonts/CrimsonText-Bold.ttf'),
+      "InstrumentSerif": require('../assets/fonts/InstrumentSerif-Regular.ttf'),
+    });
+    setFontsLoaded(true);
+  };
 
   useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
+    loadFonts();
+  }, []);
 
-  if (!loaded) {
+  if (!fontsLoaded) {
     return null;
   }
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <AppProvider>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
+        <Stack.Screen name='index' options={{
+          headerShown: false
+        }} />
+        <Stack.Screen name='Categories' options={{
+          headerShown: false
+        }} />
+        <Stack.Screen name='Questions' options={{
+          headerShown: false
+        }} />
       </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
+    </AppProvider>
+  )
 }
+
+export default _layout
