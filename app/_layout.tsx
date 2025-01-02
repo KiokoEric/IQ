@@ -10,8 +10,6 @@ const _layout = () => {
 
   const loadFonts = async () => {
     await Font.loadAsync({
-      "RobotoSlab": require('../assets/fonts/CrimsonText-Regular.ttf'),
-      "RobotoSlabBold": require('../assets/fonts/CrimsonText-Bold.ttf'),
       "InstrumentSerif": require('../assets/fonts/InstrumentSerif-Regular.ttf'),
     });
     setFontsLoaded(true);

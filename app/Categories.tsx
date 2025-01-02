@@ -1,7 +1,6 @@
-import { Link, Redirect } from 'expo-router';
+import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import { View, Text, TextInput } from 'react-native';
-import Button from '@/components/Common/Button/Button';
+import { View, Text } from 'react-native';
 import { SelectList } from 'react-native-dropdown-select-list';
 import { useAppContext } from '@/components/AppContext/AppContext';
 const Categories = () => {
