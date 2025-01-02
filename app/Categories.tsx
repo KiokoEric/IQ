@@ -87,7 +87,7 @@ return (
     </Link>
     <View style={{ display: 'flex', flexDirection: 'row', gap: 10, marginTop: 60 }}>
         <Link href={'/'} style={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingVertical: 10, paddingHorizontal: 10, borderRadius: 5, minWidth: 180 }}>
-            <Text style={{ color: 'white', fontFamily: 'InstrumentSerif', fontSize: 20, textAlign: 'center' }}>Return to Home</Text>
+            <Text style={{ color: 'white', fontFamily: 'InstrumentSerif', fontSize: 18, textAlign: 'center' }}>Return to Home</Text>
         </Link>
     </View>
 </View>
