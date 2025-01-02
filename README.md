@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+<h1 align="center"> Welcome to IQ </h1>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center" >
+  <br><br>
+  
+The website application was built using React Native and TypeScript.
 
-## Get started
+</div>
 
-1. Install dependencies
+<h2 align="center"> Website Pages </h2>
 
-   ```bash
-   npm install
-   ```
+<div>
+  <h3 align="center" >Home Page</h3>
 
-2. Start the app
+  <div align="center" >
+    <img  src="https://i.postimg.cc/DZ4Ks83J/IQ-Home-Page.jpg"> 
 
-   ```bash
-    npx expo start
-   ```
+  </div>
 
-In the output, you'll find options to open the app in a
+  <br>
+  
+  <p align="center" >The Home page provides the users with an introduction to the application, explaining to the user what the application provides and the different resources that are available to its users.</p>
+</div>
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+<br>
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<div>
+  <h3 align="center" >Category Page</h3>
 
-## Get a fresh project
+  <div align="center" >
+    <img  src="https://i.postimg.cc/PJMV8jJv/IQ-Categories-Page.jpg"> 
 
-When you're ready, run:
+  </div>
 
-```bash
-npm run reset-project
-```
+  <br>
+  
+  <p align="center">The Category page allows its users to select the quiz category, quiz difficulty and quiz type in the Educate Quiz Application.</p>
+</div>
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+<div>
+  <h3 align="center" >Questions Page</h3>
 
-## Learn more
+  <div align="center" >
+    <img  src="https://i.postimg.cc/fW7rPxCW/IQ-Questions-Page.jpg"> 
 
-To learn more about developing your project with Expo, look at the following resources:
+  </div>
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+  <br>
+  
+  <p align="center">Users will be directed to the Questions Page upon filling in the details of the quiz category, quiz difficulty and quiz type in the Category Page and will be answering 10 questions.</p>
+</div>
 
-## Join the community
+<div>
+  
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
