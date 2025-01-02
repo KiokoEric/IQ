@@ -82,7 +82,7 @@ return (
         />
     </View>
     <Text style={{ color: 'black', fontFamily: 'InstrumentSerif', fontSize: 18 }}>{Errors}</Text>
-    <Link href={'/Questions'} style={{ backgroundColor: 'black', paddingVertical: 10, paddingHorizontal: 10, borderRadius: 5, minWidth: 180 }} >
+    <Link href={'/Questions'} style={{ backgroundColor: 'black', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingVertical: 10, paddingHorizontal: 10, borderRadius: 5, minWidth: 180 }} >
         <Text style={{ color: 'white', fontFamily: 'InstrumentSerif', fontSize: 18, textAlign: 'center'}}>Submit Parameters</Text>
     </Link>
     <View style={{ display: 'flex', flexDirection: 'row', gap: 10, marginTop: 60 }}>
